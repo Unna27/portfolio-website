@@ -5,19 +5,6 @@
 * Browsers: last 4 version
 */
 
-:root {
-  --normal-font-weight: 400;
-  --heading-font-weight: 700;
-  --bg-color: #F0F8FF;
-  --anchor-normal: #006988;
-  --anchor-visited: #05676e;
-  --anchor-hover: #e5f0f3;
-  --anchor-active: #489c79;
-  --btn-bgcolor: #006988;
-  --btn-fontcolor: #FFFFFF;
-  --grid-bgcolor: #F8F8FF;
-}
-
 /* universal selector */
 * {
   -webkit-box-sizing: border-box;
@@ -25,62 +12,56 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: #F0F8FF;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: var(--normal-font-weight);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
 }
 
 h1 {
-  font-weight: var(--heading-font-weight);
-  font-size: 28px;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 h2 {
-  font-weight: var(--heading-font-weight);
+  font-weight: 700;
   font-size: 24px;
 }
 
+p {
+  margin: .5em;
+}
+
+section > h1 {
+  text-align: center;
+}
 a {
-  color: var(--anchor-normal);
+  color: #006988;
 }
 
 a:visited {
-  color: var(--anchor-visited);
+  color: #05676e;
 }
 
-a:hover,
+a:hover {
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #ced8da;
+}
+
 a:focus {
   text-decoration: none;
   -webkit-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
-  background-color: var(--anchor-hover);
+  background-color: #ced8da;
 }
 
 a:active {
-  color: var(--anchor-active);
-}
-
-button {
-  font-family: inherit;
-  border:none;
-  background-color: var(--btn-bgcolor);
-  text-decoration: none;
-  color: var(--btn-fontcolor);
-  padding:10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
-button:hover,
-button:focus {
-  cursor:pointer;;
-  opacity: 0.8;
+  color: #489c79;
 }
 
 .page-header {
@@ -160,7 +141,7 @@ button:focus {
   }
 
   .projects-list__item {
-      background-color: var(--grid-bgcolor);
+      background-color: #F8F8FF;
       width: auto;
       min-height: auto;
       margin: 0;
@@ -210,11 +191,15 @@ button:focus {
 }
 
 .aboutme__item {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .dresden {
@@ -316,6 +301,100 @@ button:focus {
       -webkit-transform: translateX(0);
               transform: translateX(0);
     }
+}
+
+/* contact form */
+.contactform__wrapper {
+  max-width: 700px;
+  background-color: #F8F8FF;
+  margin: 0 auto; /* to place the wrapper in center */
+  border-radius: 3px;
+}
+
+.contactform__wrapper__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: .5em;
+}
+
+.contactform__wrapper__items > label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contactform__wrapper__items > input {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.submit_button {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+button {
+  font-family: inherit;
+  display: inline-block;
+  border:none;
+  background-color: #006988;
+  text-decoration: none;
+  color: #FFFFFF!important;
+  padding:10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+.download_button {
+  font-family: inherit;
+  display: inline-block;
+  border:none;
+  background-color: #006988;
+  text-decoration: none;
+  color: #FFFFFF!important;
+  padding:10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+.submit_button {
+  font-family: inherit;
+  display: inline-block;
+  border:none;
+  background-color: #006988;
+  text-decoration: none;
+  color: #FFFFFF!important;
+  padding:10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+button:hover,
+button:focus,
+.download_button:hover,
+.download_button:focus,
+.submit_button:hover,
+.submit_button:focus {
+  cursor:pointer;;
+  opacity: 0.8;
 }
 
 /* clear the float setting and bring the footer down and align it in center*/
