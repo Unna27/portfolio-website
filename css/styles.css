@@ -4,11 +4,13 @@
   --bg-color: #F0F8FF;
   --anchor-normal: #006988;
   --anchor-visited: #05676e;
-  --anchor-hover: #e5f0f3;
+  --anchor-hover: #ced8da;
   --anchor-active: #489c79;
   --btn-bgcolor: #006988;
   --btn-fontcolor: #FFFFFF;
-  --grid-bgcolor: #F8F8FF;
+  --frame-bgcolor: #F8F8FF;
+  --radius: 3px;
+  --frame-maxwidth: 700px;
 }
 
 /* universal selector */
@@ -26,7 +28,7 @@ body {
 
 h1 {
   font-weight: var(--heading-font-weight);
-  font-size: 28px;
+  font-size: 26px;
 }
 
 h2 {
@@ -34,6 +36,13 @@ h2 {
   font-size: 24px;
 }
 
+p {
+  margin: .5em;
+}
+
+section > h1 {
+  text-align: center;
+}
 a {
   color: var(--anchor-normal);
 }
@@ -51,24 +60,6 @@ a:focus {
 
 a:active {
   color: var(--anchor-active);
-}
-
-button {
-  font-family: inherit;
-  border:none;
-  background-color: var(--btn-bgcolor);
-  text-decoration: none;
-  color: var(--btn-fontcolor);
-  padding:10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
-  transition: 0.8s opacity;
-}
-
-button:hover,
-button:focus {
-  cursor:pointer;;
-  opacity: 0.8;
 }
 
 .page-header {
@@ -106,7 +97,7 @@ button:focus {
 
 /* Home page content */
 .profile {
-  max-width: 700px;
+  max-width: var(--frame-maxwidth);
   margin: 0 auto; /* to center horizontally*/
 }
 
@@ -140,7 +131,7 @@ button:focus {
   }
 
   .projects-list__item {
-      background-color: var(--grid-bgcolor);
+      background-color: var(--frame-bgcolor);
       width: auto;
       min-height: auto;
       margin: 0;
@@ -185,11 +176,9 @@ button:focus {
 }
 
 .aboutme__item {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dresden {
@@ -241,6 +230,58 @@ button:focus {
     100% {
       transform: translateX(0);
     }
+}
+
+/* contact form */
+.contactform__wrapper {
+  max-width: var(--frame-maxwidth);
+  background-color: var(--frame-bgcolor);
+  margin: 0 auto; /* to place the wrapper in center */
+  border-radius: var(--radius);
+}
+
+.contactform__wrapper__items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: .5em;
+}
+
+.contactform__wrapper__items > label {
+  flex: 1;
+}
+
+.contactform__wrapper__items > input {
+  flex: 2;
+}
+
+.submit_button {
+  max-width: fit-content;
+}
+
+button,
+.download_button,
+.submit_button {
+  font-family: inherit;
+  display: inline-block;
+  border:none;
+  background-color: var(--btn-bgcolor);
+  text-decoration: none;
+  color: var(--btn-fontcolor)!important;
+  padding:10px;
+  border-radius: var(--radius);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  transition: 0.8s opacity;
+}
+
+button:hover,
+button:focus,
+.download_button:hover,
+.download_button:focus,
+.submit_button:hover,
+.submit_button:focus {
+  cursor:pointer;;
+  opacity: 0.8;
 }
 
 /* clear the float setting and bring the footer down and align it in center*/
