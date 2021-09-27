@@ -1,51 +1,64 @@
+:root {
+  --normal-font-weight: 400;
+  --heading-font-weight: 700;
+  --bg-color: #F0F8FF;
+  --anchor-normal: #006988;
+  --anchor-visited: #05676e;
+  --anchor-hover: #e5f0f3;
+  --anchor-active: #489c79;
+  --btn-bgcolor: #006988;
+  --btn-fontcolor: #FFFFFF;
+  --grid-bgcolor: #F8F8FF;
+}
+
 /* universal selector */
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #F0F8FF; /* F0F8FF - Alice Blue */
+  background-color: var(--bg-color);
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: var(--normal-font-weight);
   font-size: 16px;
   line-height: 1.6;
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: var(--heading-font-weight);
   font-size: 28px;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: var(--heading-font-weight);
   font-size: 24px;
 }
 
 a {
-  color: #006988;
+  color: var(--anchor-normal);
 }
 
 a:visited {
-  color:#05676e;
+  color: var(--anchor-visited);
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
   transition: background-color 0.25s ease-out;
-  background-color: #e5f0f3;
+  background-color: var(--anchor-hover);
 }
 
 a:active {
-  color: #489c79;
+  color: var(--anchor-active);
 }
 
 button {
   font-family: inherit;
   border:none;
-  background-color: #006988;
+  background-color: var(--btn-bgcolor);
   text-decoration: none;
-  color:white;
+  color: var(--btn-fontcolor);
   padding:10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0,0,0,0.3);
@@ -127,7 +140,7 @@ button:focus {
   }
 
   .projects-list__item {
-      background-color: #DCDCDC; /*Gainsboro*/
+      background-color: var(--grid-bgcolor);
       width: auto;
       min-height: auto;
       margin: 0;
