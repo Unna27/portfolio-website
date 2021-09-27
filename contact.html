@@ -41,19 +41,34 @@
   </header>
     <div>
       <form class="contactform" action="" method="post">
-        <label for="fname">FirstName: </label>
-        <input type="text" name="fname" id="fname" value="" placeholder="First Name">
-        <label for="lname">LastName: </label>
-        <input type="text" name="lname" id="lname" value="" placeholder="Last Name">
-        <label for="email">*Email: </label>
-        <input type="email" name="email" id="email" value="" placeholder="abc@xzy.com" required>
-        <label for="tel">Telephone: </label>
-        <input type="tel" name="tel" id="tel" value="" placeholder="000-000-0000" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-        <label for="message">*Message: </label>
-        <textarea name="message" id="message" placeholder="write your message" rows="8" cols="80" required></textarea>
-        <input type="submit" name="" value="Submit">
-        <p>* indicates mandatory fields </p>
-      </form>
+        <div class="contactform__wrapper">
+          <div class="contactform__wrapper__items">
+            <label for="fname">FirstName: </label>
+            <input type="text" name="fname" id="fname" value="" placeholder="First Name">
+          </div>
+          <div class="contactform__wrapper__items">
+            <label for="lname">LastName: </label>
+            <input type="text" name="lname" id="lname" value="" placeholder="Last Name">
+          </div>
+          <div class="contactform__wrapper__items">
+            <label for="email">*Email: </label>
+            <input type="email" name="email" id="email" value="" placeholder="abc@xzy.com" required>
+          </div>
+          <div class="contactform__wrapper__items">
+            <label for="tel">Telephone: </label>
+            <input type="tel" name="tel" id="tel" value="" placeholder="000-000-0000" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+          </div>
+          <div class="contactform__wrapper__items">
+            <label for="message">*Message: </label>
+            <textarea name="message" id="message" placeholder="write your message" rows="8" cols="60" required></textarea>
+          </div>
+          <div class="contactform__wrapper__items">
+            <input type="submit" name="" class="submit_button" value="Submit">
+          </div>
+
+          <p>* indicates mandatory fields </p>
+        </div>
+    </form>
     </div>
     <!-- Footer includes social media images-->
     <footer class="page-footer">
