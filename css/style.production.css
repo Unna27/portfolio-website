@@ -8,11 +8,11 @@
 /* universal selector */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -30,12 +30,13 @@ h2 {
 }
 
 p {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 section > h1 {
   text-align: center;
 }
+
 a {
   color: #006988;
 }
@@ -74,8 +75,8 @@ a:active {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:first-child {
@@ -85,8 +86,8 @@ a:active {
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -106,7 +107,7 @@ a:active {
 /* Home page content */
 .profile {
   max-width: 700px;
-  margin: 0 auto; /* to center horizontally*/
+  margin: 0 auto; /* to center horizontally */
 }
 
 /* bring the profile picture to left */
@@ -121,19 +122,23 @@ a:active {
 .profile span {
   font-weight: bold;
 }
-/* Work page content - Projectlist*/
+
+/* Work page content - Projectlist */
+
 /* for browsers that doesnot support Grid format */
 .projects-list__item {
   display: inline-block;
   width: 33%;
 }
+
 /* end of Grid format check */
 
 @supports (display: grid) {
   .projects-list {
     display: -ms-grid;
     display: grid;
-    /*grid-template: repeat(2, 300px) / repeat(3, 300px); to split into 2 rows and 3 columns */
+
+    /* grid-template: repeat(2, 300px) / repeat(3, 300px); to split into 2 rows and 3 columns */
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
@@ -141,21 +146,22 @@ a:active {
   }
 
   .projects-list__item {
-      background-color: #F8F8FF;
-      width: auto;
-      min-height: auto;
-      margin: 0;
-    }
+    background-color: #f8f8ff;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
 
-    .projects-list__item:last-child {
-      -ms-grid-column: 3;
-      grid-column: 3 / 3;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      grid-row: 1 / 3;
-    }
+  .projects-list__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
 }
-/* check for different screen-sizes using media queries*/
+
+/* check for different screen-sizes using media queries */
 @media all and (max-width: 500px) {
   .projects-list {
     -ms-grid-columns: 1fr;
@@ -163,7 +169,7 @@ a:active {
   }
 }
 
-@media  all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 500px) and (max-width: 750px) {
   .projects-list {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -195,36 +201,36 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .dresden {
   height: 350px;
-  width:100%;
+  width: 100%;
 }
 
 .dresden__picline {
   -webkit-animation-name: fadeIn, spin;
-          animation-name: fadeIn, spin;
+  animation-name: fadeIn, spin;
   -webkit-animation-duration: 3s, 5s;
-          animation-duration: 3s, 5s;
+  animation-duration: 3s, 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .dresden__flag {
   -webkit-animation: 3s slidein_flag infinite linear;
-          animation: 3s slidein_flag infinite linear;
+  animation: 3s slidein_flag infinite linear;
 }
 
 /* add animation to Dresden picture */
@@ -232,14 +238,17 @@ a:active {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -248,65 +257,75 @@ a:active {
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
 @keyframes spin {
   100% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
+
 @-webkit-keyframes slidein_flag {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    25% {
-      -webkit-transform: translateX(600px);
-              transform: translateX(600px);
-    }
-    50% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    75% {
-      -webkit-transform: translateX(-600px);
-              transform: translateX(-600px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25% {
+    -webkit-transform: translateX(600px);
+    transform: translateX(600px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  75% {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
+
 @keyframes slidein_flag {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    25% {
-      -webkit-transform: translateX(600px);
-              transform: translateX(600px);
-    }
-    50% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    75% {
-      -webkit-transform: translateX(-600px);
-              transform: translateX(-600px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25% {
+    -webkit-transform: translateX(600px);
+    transform: translateX(600px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  75% {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 /* contact form */
 .contactform__wrapper {
   max-width: 700px;
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   margin: 0 auto; /* to place the wrapper in center */
   border-radius: 3px;
 }
@@ -316,24 +335,24 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: .5em;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0.5em;
 }
 
 .contactform__wrapper__items > label {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .contactform__wrapper__items > input {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
 .submit_button {
@@ -345,13 +364,13 @@ a:active {
 button {
   font-family: inherit;
   display: inline-block;
-  border:none;
+  border: none;
   background-color: #006988;
   text-decoration: none;
-  color: #FFFFFF!important;
-  padding:10px;
+  color: #fff !important;
+  padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
   transition: 0.8s opacity;
@@ -360,13 +379,13 @@ button {
 .download_button {
   font-family: inherit;
   display: inline-block;
-  border:none;
+  border: none;
   background-color: #006988;
   text-decoration: none;
-  color: #FFFFFF!important;
-  padding:10px;
+  color: #fff !important;
+  padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
   transition: 0.8s opacity;
@@ -375,13 +394,13 @@ button {
 .submit_button {
   font-family: inherit;
   display: inline-block;
-  border:none;
+  border: none;
   background-color: #006988;
   text-decoration: none;
-  color: #FFFFFF!important;
-  padding:10px;
+  color: #fff !important;
+  padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
   transition: 0.8s opacity;
@@ -393,11 +412,11 @@ button:focus,
 .download_button:focus,
 .submit_button:hover,
 .submit_button:focus {
-  cursor:pointer;;
+  cursor: pointer;
   opacity: 0.8;
 }
 
-/* clear the float setting and bring the footer down and align it in center*/
+/* clear the float setting and bring the footer down and align it in center */
 .page-footer {
   clear: both;
   display: -webkit-box;
@@ -405,7 +424,7 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
