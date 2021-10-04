@@ -23,6 +23,7 @@
 
 ## Screenshots
 
+<img width="960" alt="aboutme" src="https://user-images.githubusercontent.com/58221568/135826994-60e55c20-3b84-4ffb-9145-9e98f9352100.png">
 
 
 ## Project Status
@@ -37,7 +38,7 @@ To do:
 
 
 ## Acknowledgements
-- This project was based on the CareerFoundry tutorial (
+- This project was based on the CareerFoundry tutorial (https://careerfoundry.com/en/courses/become-a-web-developer/)
 - Many thanks to my Mentor (Renish Bhaskaran) and my Tutor (Blaise Bakundukize) for offering me timely feedback and support to shape my project.
 
 
