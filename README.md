@@ -22,7 +22,6 @@
 
 
 ## Screenshots
-
 <img width="960" alt="aboutme" src="https://user-images.githubusercontent.com/58221568/135826994-60e55c20-3b84-4ffb-9145-9e98f9352100.png">
 
 
