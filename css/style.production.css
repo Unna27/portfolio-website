@@ -22,6 +22,7 @@ body {
 h1 {
   font-weight: 700;
   font-size: 26px;
+  padding: 5px;
 }
 
 h2 {
@@ -117,6 +118,7 @@ a:active {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  padding: 10px;
 }
 
 .profile span {
@@ -143,6 +145,7 @@ a:active {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
+    padding: 10px;
   }
 
   .projects-list__item {
@@ -163,6 +166,10 @@ a:active {
 
 /* check for different screen-sizes using media queries */
 @media all and (max-width: 500px) {
+  .profile__portrait {
+    float: none;
+  }
+
   .projects-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -211,6 +218,7 @@ a:active {
 .dresden {
   height: 350px;
   width: 100%;
+  padding: 10px;
 }
 
 .dresden__picline {
@@ -234,6 +242,7 @@ a:active {
 }
 
 /* add animation to Dresden picture */
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
