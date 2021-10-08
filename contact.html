@@ -21,7 +21,8 @@
   <!--Header includes logo and main navigation-->
   <header class="page-header">
     <!--Add logo here-->
-    <img src="img/unna.jpg" class="page-header__item" alt="Personal logo of Unnamamalai Ramanathan,a text logo in uppercase letters that consists of my name ">
+    <div class="page-header__item" title="Personal logo of Unnamamalai Ramanathan,a text logo in camel-case letters that consists of my name.">
+    </div>
     <nav class="page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -40,7 +41,7 @@
     </nav>
   </header>
     <div>
-      <form class="contactform" action="#" method="post">
+      <form class="contactform" action="#" method="post" onsubmit="alert('Thank You!! Your message has been sent.')" >
         <div class="contactform__wrapper">
           <div class="contactform__wrapper__items">
             <label for="fname">FirstName: </label>

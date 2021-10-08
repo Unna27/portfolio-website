@@ -47,6 +47,7 @@ section > h1 {
 
 a {
   color: var(--anchor-normal);
+  padding-left: 5px;
 }
 
 a:visited {
@@ -67,7 +68,7 @@ a:active {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .page-header__item {
@@ -76,7 +77,10 @@ a:active {
 
 .page-header__item:first-child {
   height: 50px;
-  width: auto;
+  width: 100%;
+  background-image: url('../img/unna.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .page-header__item:last-child {
@@ -184,9 +188,13 @@ a:active {
 }
 
 /* About me page content */
+
+/* Not in use.
 .aboutme {
   height: 450px;
-}
+} */
+
+/* To display Download my CV button in center */
 
 .aboutme__item {
   display: flex;
@@ -195,7 +203,7 @@ a:active {
 }
 
 .dresden {
-  height: 350px;
+  height: 300px;
   width: 100%;
   padding: 10px;
 }
@@ -289,7 +297,7 @@ button,
   background-color: var(--btn-bgcolor);
   text-decoration: none;
   color: var(--btn-fontcolor) !important;
-  padding: 10px;
+  padding: 5px;
   border-radius: var(--radius);
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.8s opacity;
