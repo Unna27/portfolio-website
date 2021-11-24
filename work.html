@@ -1,85 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Unnamalai Ramanathan - Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="description" content="This site gives an overview of the projects developed by Unnamalai and contact information.">
-  <!-- to optimize the contents displayed on a phone -->
-  <meta name="viewport" content="width=device-width initial-scale=1">
-  <!-- Add favorite icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <!-- Link to CSS file that resets all the styles in the page-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <!-- Link to import Source Sans Pro Google Font-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@300;400;700&display=swap">
-  <!-- Link to CSS file that sets specified styles in the page-->
-  <link rel="stylesheet" href="css/style.production.css">
-</head>
-<body>
-  <!--Header includes logo and main navigation-->
-  <header class="page-header">
-    <!--Add logo here-->
-    <div class="page-header__item" title="Personal logo of Unnamamalai Ramanathan,a text logo in camel-case letters that consists of my name.">
-    </div>
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!--Main Content that shows the list of my completed Projects-->
-  <section>
-    <h1>List of Projects</h1>
-    <div class="projects-list">
-      <div class="projects-list__item">
-        <h2>Tweet</h2>
-        <p>This page allows to write short posts with a maximum length of 80 characters. It's written in Javascript. Additionally I have created HTML and CSS templates. </p>
-        <a href="https://rmpriya27.github.io/Tweet/tweet.html" target="_blank">See project on GitHub</a>
+  <head>
+    <title>Unnamalai Ramanathan - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This site gives an overview of the projects developed by Unnamalai and contact information."
+    />
+    <!-- to optimize the contents displayed on a phone -->
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <!-- Add favorite icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <!-- Link to CSS file that resets all the styles in the page-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <!-- Link to import Source Sans Pro Google Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+    />
+    <!-- Link to CSS file that sets specified styles in the page-->
+    <link rel="stylesheet" href="css/style.production.css" />
+  </head>
+  <body>
+    <!--Header includes logo and main navigation-->
+    <header class="page-header">
+      <!--Add logo here-->
+      <div
+        class="page-header__item"
+        title="Personal logo of Unnamamalai Ramanathan,a text logo in camel-case letters that consists of my name."
+      ></div>
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main Content that shows the list of my completed Projects-->
+    <section>
+      <h1>List of Projects</h1>
+      <div class="projects-list">
+        <div class="projects-list__item">
+          <h2>Tweet</h2>
+          <p>
+            This page allows to write short posts with a maximum length of 80
+            characters. It's written in Javascript. Additionally I have created
+            HTML and CSS templates.
+          </p>
+          <a href="https://rmpriya27.github.io/Tweet/tweet.html" target="_blank"
+            >See project on GitHub</a
+          >
+        </div>
+        <div class="projects-list__item">
+          <h2>Target Pointer</h2>
+          <p>
+            The concept of this simple game is to help Tom catch Jerry by
+            tracking mouse clicks. It's written in Javascript. Additionally I
+            have created HTML and CSS templates.
+          </p>
+          <a href="https://rmpriya27.github.io/Target_Pointer/" target="_blank"
+            >See project on GitHub</a
+          >
+        </div>
+        <div class="projects-list__item">
+          <h2>User Application</h2>
+          <p>
+            A simple application to record user details. It allows to Create,
+            Read, Update and Delete [CRUD] user details. It's written in
+            Typescript. Firebase is used to store the user details.
+          </p>
+          <a href="#">See project on GitHub</a>
+        </div>
+        <div class="projects-list__item">
+          <h2>Pokedex</h2>
+          <p>
+            A small web application built using HTML, CSS, and JavaScript that
+            loads data from an external API and enables the viewing of data
+            points in detail.
+          </p>
+          <a href="https://unna27.github.io/loaddata-js-app/"
+            >See project on GitHub</a
+          >
+        </div>
+        <div class="projects-list__item">
+          <h2>Test</h2>
+          <p>
+            The concept of this simple game is to help Tom catch Jerry by
+            tracking mouse clicks. It's written in Javascript. Additionally I
+            have created HTML and CSS templates.
+          </p>
+          <a href="#">See project on GitHub</a>
+        </div>
       </div>
-      <div class="projects-list__item">
-        <h2>Target Pointer</h2>
-        <p>The concept of this simple game is to help Tom catch Jerry by tracking mouse clicks. It's written in Javascript. Additionally I have created HTML and CSS templates. </p>
-        <a href="https://rmpriya27.github.io/Target_Pointer/" target="_blank">See project on GitHub</a>
+    </section>
+    <!-- Footer includes social media images-->
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="page-footer__socialmedia">
+        <a href="https://www.linkedin.com/in/unnarm27" target="_blank"
+          ><img src="img/linkedin.svg" alt="Linkedin logo"
+        /></a>
+        <a href="https://github.com/Unna27" target="_blank"
+          ><img src="img/github.svg" alt="Github logo"
+        /></a>
       </div>
-      <div class="projects-list__item">
-        <h2>User Application</h2>
-        <p>A simple application to record user details. It allows to Create, Read, Update and Delete [CRUD] user details. It's written in Typescript. Firebase is used to store the user details. </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-      <div class="projects-list__item">
-        <h2>Test</h2>
-        <p>The concept of this simple game is to help Tom catch Jerry by tracking mouse clicks. It's written in Javascript. Additionally I have created HTML and CSS templates. </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-      <div class="projects-list__item">
-        <h2>Test</h2>
-        <p>The concept of this simple game is to help Tom catch Jerry by tracking mouse clicks. It's written in Javascript. Additionally I have created HTML and CSS templates. </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-    </div>
-  </section>
-  <!-- Footer includes social media images-->
-  <footer class="page-footer">
-    <p>Find me on </p>
-    <div class="page-footer__socialmedia">
-      <a href="https://www.linkedin.com/in/unnarm27" target="_blank"><img src="img/linkedin.svg" alt="Linkedin logo"></a>
-      <a href="https://github.com/Unna27" target="_blank"><img src="img/github.svg" alt="Github logo"></a>
-    </div>
-  </footer>
-  <!--add tota11y js file to check HTML accessibilities-->
-  <script src="js/tota11y.min.js"></script>
-</body>
+    </footer>
+    <!--add tota11y js file to check HTML accessibilities-->
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
