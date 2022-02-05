@@ -5,6 +5,23 @@
 * Browsers: last 4 version
 */
 
+:root {
+  --normal-font-weight: 400;
+  --heading-font-weight: 700;
+  --bg-color: #f0f8ff;
+  --homefont-color: #add8e6;
+  --framefont-color: #00008b;
+  --anchor-normal: #ffb6c1;
+  --anchor-visited: #ffb6c1;
+  --anchor-hover: #fff;
+  --anchor-active: #ffc0cb;
+  --btn-bgcolor: #006988;
+  --btn-fontcolor: #fff;
+  --frame-bgcolor: #f8f8ff;
+  --radius: 3px;
+  --frame-maxwidth: 700px;
+}
+
 /* universal selector */
 * {
   -webkit-box-sizing: border-box;
@@ -12,21 +29,27 @@
 }
 
 body {
-  background-color: #f0f8ff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  background-color: var(--bg-color);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: var(--normal-font-weight);
   font-size: 16px;
   line-height: 1.6;
+  background-image: url("../img/design1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--homefont-color);
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: var(--heading-font-weight);
   font-size: 26px;
   padding: 5px;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: var(--heading-font-weight);
   font-size: 24px;
 }
 
@@ -39,32 +62,25 @@ section > h1 {
 }
 
 a {
-  color: #006988;
+  color: var(--anchor-normal);
   padding-left: 5px;
 }
 
 a:visited {
-  color: #05676e;
+  color: var(--anchor-visited);
 }
 
-a:hover {
-  text-decoration: none;
-  -webkit-transition: background-color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-  background-color: #ced8da;
-}
-
+a:hover,
 a:focus {
   text-decoration: none;
   -webkit-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
-  background-color: #ced8da;
+  background-color: var(--anchor-hover);
 }
 
 a:active {
-  color: #489c79;
+  color: var(--anchor-active);
 }
 
 .page-header {
@@ -84,7 +100,7 @@ a:active {
 .page-header__item:first-child {
   height: 50px;
   width: 100%;
-  background-image: url('../img/unna.jpg');
+  background-image: url("../img/unna.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -111,7 +127,7 @@ a:active {
 
 /* Home page content */
 .profile {
-  max-width: 700px;
+  max-width: var(--frame-maxwidth);
   margin: 0 auto; /* to center horizontally */
 }
 
@@ -119,7 +135,7 @@ a:active {
 .profile__portrait {
   float: left;
   margin-right: 40px;
-  width: 250px;
+  width: 200px;
   height: 250px;
   border-radius: 50%;
   padding: 10px;
@@ -135,6 +151,11 @@ a:active {
 .projects-list__item {
   display: inline-block;
   width: 33%;
+  color: var(--framefont-color);
+}
+
+.projects-list__item a {
+  font-weight: bold;
 }
 
 /* end of Grid format check */
@@ -153,7 +174,7 @@ a:active {
   }
 
   .projects-list__item {
-    background-color: #f8f8ff;
+    background-color: var(--frame-bgcolor);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -206,7 +227,7 @@ a:active {
 
 /* Not in use.
 .aboutme {
-height: 450px;
+  height: 450px;
 } */
 
 /* To display Download my CV button in center */
@@ -341,10 +362,10 @@ height: 450px;
 
 /* contact form */
 .contactform__wrapper {
-  max-width: 700px;
-  background-color: #f8f8ff;
+  max-width: var(--frame-maxwidth);
+  background-color: var(--frame-bgcolor);
   margin: 0 auto; /* to place the wrapper in center */
-  border-radius: 3px;
+  border-radius: var(--radius);
 }
 
 .contactform__wrapper__items {
@@ -364,6 +385,7 @@ height: 450px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: var(--framefont-color);
 }
 
 .contactform__wrapper__items > input {
@@ -378,45 +400,17 @@ height: 450px;
   max-width: fit-content;
 }
 
-button {
-  font-family: inherit;
-  display: inline-block;
-  border: none;
-  background-color: #006988;
-  text-decoration: none;
-  color: #fff !important;
-  padding: 5px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
-.download_button {
-  font-family: inherit;
-  display: inline-block;
-  border: none;
-  background-color: #006988;
-  text-decoration: none;
-  color: #fff !important;
-  padding: 5px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
+button,
+.download_button,
 .submit_button {
   font-family: inherit;
   display: inline-block;
   border: none;
-  background-color: #006988;
+  background-color: var(--btn-bgcolor);
   text-decoration: none;
-  color: #fff !important;
+  color: var(--btn-fontcolor) !important;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: var(--radius);
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
