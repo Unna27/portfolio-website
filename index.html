@@ -37,8 +37,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@300;400;700&display=swap"
     />
+    <!-- Link to CSS Bootstrap file -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- Link to CSS file that sets specified styles in the page-->
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!--Header includes logo and main navigation-->
@@ -59,18 +64,8 @@
             >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About me</a
-            >
-          </li>
-          <li role="presentation">
             <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
+              >Projects</a
             >
           </li>
         </ul>
@@ -81,11 +76,63 @@
       <img src="img/laptop.jpg" class="profile__portrait" alt="profile pic" />
       <h1>Good Day!! I am Unna</h1>
       <p><span>Full Stack Developer</span> based in Dresden</p>
-      <!-- Add link to github profile page -->
-      <a href="https://github.com/Unna27" target="_blank">View my work</a>
+
+      <!-- Add link to github profile page
+      <a href="https://github.com/Unna27" target="_blank">View my work</a>-->
+    </div>
+    <div class="row">
+      <p class="col-sm-6">
+        I build interactive websites that run across platforms and devices. As a
+        passionate developer, I enjoy coding and love to solve complex problems
+        in a systematic way.
+      </p>
+      <div class="col-sm-5">
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped"
+            style="width:80%; font-weight: bold"
+          >
+            Lotusscript
+          </div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-success progress-bar-striped"
+            style="width:70%; font-weight: bold"
+          >
+            Javascript
+          </div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-info progress-bar-striped"
+            style="width:60%; font-weight: bold"
+          >
+            HTML
+          </div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning progress-bar-striped"
+            style="width:50%; font-weight: bold"
+          >
+            CSS
+          </div>
+        </div>
+        <br />
+      </div>
     </div>
     <!-- Footer includes social media images-->
     <footer class="page-footer">
+      <!-- embed dresden_svg file -->
+      <div class="row imagecontainer">
+        <div class="col-sm-12">
+          <object data="img/dresden_svg.svg" class="dresden"> </object>
+        </div>
+      </div>
       <p>Find me on</p>
       <div class="page-footer__socialmedia">
         <a href="https://www.linkedin.com/in/unnarm27" target="_blank"
@@ -96,6 +143,10 @@
         /></a>
       </div>
     </footer>
+    <!-- add Bootstrap js files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--add tota11y js file to check HTML accessibilities-->
     <script src="js/tota11y.min.js"></script>
   </body>

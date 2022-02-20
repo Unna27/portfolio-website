@@ -211,6 +211,10 @@ a:active {
 
 /* To display Download my CV button in center */
 
+.imagecontainer {
+  text-align: center;
+}
+
 .aboutme__item {
   display: flex;
   align-items: center;
