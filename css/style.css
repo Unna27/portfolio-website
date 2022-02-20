@@ -140,6 +140,8 @@ a:active {
 
 .projects-list__item a {
   font-weight: bold;
+  display: block;
+  text-align: center;
 }
 
 /* end of Grid format check */
